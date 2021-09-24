@@ -1,0 +1,16 @@
+.nav a {
+  text-decoration: none;
+  margin-left: 20px;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.nav {
+  background-color: black;
+  line-height: 50px;
+}
+.nav a:hover {
+  background-color: aquamarine;
+  color: black;
+}

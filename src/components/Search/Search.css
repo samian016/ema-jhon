@@ -1,0 +1,31 @@
+.src-container {
+  background-color: black;
+  padding-bottom: 10px;
+}
+#search {
+  border-radius: 25px;
+  margin-right: 5px;
+  height: 30px;
+  width: 400px;
+  outline: none;
+  font-size: 20px;
+}
+#search:hover {
+  outline: auto;
+  outline-color: yellow;
+}
+.src-button {
+  border-radius: 25px;
+  margin-right: 5px;
+  height: 35px;
+  background-image: linear-gradient(black, gray);
+  color: white;
+  transition: transform 1s;
+}
+.src-button:hover {
+  transform: rotate(360deg);
+}
+
+.src-pair {
+  padding-top: 10px;
+}

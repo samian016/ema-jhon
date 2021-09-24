@@ -1,0 +1,9 @@
+.shop-modle {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+.producet-container {
+  border-right: 1px solid lightgray;
+  margin-right: 15px;
+}
