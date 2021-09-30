@@ -13,29 +13,28 @@ const Cart = (props) => {
   //   return previous;
   // };
   // const total = cart.reduce(reducer, 0);
-  
+
   let totalQuantity = 0;
   let total = 0;
-  for (const product of cart){
-    if(!product.quantity){
-      product.quantity= 1;
+  for (const product of cart) {
+    if (!product.quantity) {
+      product.quantity = 1;
     }
-    total = total + (product.price * product.quantity);
+    total = total + product.price * product.quantity;
     totalQuantity = totalQuantity + product.quantity;
   }
 
   const shipping = 20;
-  const tax = ((total)/100)*15;
+  const tax = (total / 100) * 15;
   let gtotal = 0;
-  if(cart.length !== 0){
+  if (cart.length !== 0) {
     gtotal = total + shipping + tax;
-  }
-  else{
+  } else {
     gtotal = 0;
   }
   return (
     <div>
-      <h2 style={{ textAlign: "center" }}>Order Summary</h2>
+      <h2 style={{ textAlign: "center" }}>Summary</h2>
       <hr
         style={{
           border: "2px solid black",
